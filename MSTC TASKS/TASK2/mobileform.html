@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <style>
+h2
+{
+    font-family:'Raleway',sans-serif;
+    text-align:center;
+    font-weight:700;
+    font-size:70px;
+    color:#FF9900;
+}
+
+.survey
+{
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.third > p {
+    font-size:1.5rem;
+    font-weight:200;
+    color:#FF9900;
+    font-style:italic;
+}
+.form
+{
+    margin: 0 0 1.25rem 30vw;
+    padding:0.25rem;
+    font-family:'Poppins',sans-serif;
+    float: left;
+    color:#FF9900;
+}
+.options
+{
+    text-align:left;
+    top:50%;
+    bottom:50%;
+
+}
+.label
+{
+    display:flex;
+    align-items:left;
+    font-size:3.5rem;
+    margin-bottom:1rem;
+    color:#FF9900;
+
+}
+.layout
+{
+    display:flex;
+    align-items:flex-end;
+    width:100%;
+    height:58px;
+    padding:6px 6px;
+    color:#FF9900;
+    border:1px solid  #28292b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:700px;
+    margin:2px;
+
+}
+.inputcheckbox
+{
+    display: inline-block;
+    margin-right:6px;
+    min-width: 16px;
+    min-height:16px;
+    
+}
+.inputtextarea
+{
+    width:100%;
+    min-height:130px;
+    padding:10px;
+    box-sizing: border-box;
+    width:600px;
+}
+input,button,select,textarea
+{
+    margin:0;
+    font-family:inherit;
+    font-weight:inherit;
+    line-height: inherit;
+}
+.inputsubmit
+{
+    display:block;
+    background-color: #009900;
+    color:white;
+    text-align:center;
+    cursor: pointer;
+    padding:12px;
+    box-sizing: border-box;
+    width:603px;
+}
+.brackets
+{
+    margin-left:4px;
+    color:#FF9900;    
+}
+option{
+    padding:2px;
+    text-align:center;
+}
+.button 
+{
+    display:inline-block;
+    padding:1rem 1.5rem;
+    border-radius:2px;
+}
+    </style>
+</head>
+<body style="background-color: #28292b;">
+<section id="thirdpage" class="third">
+    <h2>Mobile Survey</h2>
+    <p style="text-align: center;">Thank you for taking the time to improve the platform.</p>
+    <div class="options">
+    <form class="survey">
+        <div class="form">
+            <label>Username:</label>
+            <input type="text" name="name" placeholder="Enter your Username" class="layout">
+        </div>
+        <div class="form">
+            <label>Email ID</label>
+            <input type="email" name="email" placeholder="Enter your Email-ID" class="layout">
+        </div>
+        <div class="form">
+        <label>Which Model do you prefer?<span class="brackets">(choose from the below)</span></label>
+        <br>
+        <input type="radio" name="age" value="Iphone 11 Pro"> Iphone 11 Pro
+        <br>
+        <input type="radio" name="age" value="Samsung S20 Ultra" > Samsung S20 Ultra
+        <br>
+        <input type="radio" name="age" value="Iphone Xs Max"> Iphone Xs Max
+        <br>
+        </div>
+        <div class="form">
+            <label>Choose your Country</label>
+            <select class="layout" >
+                <option value="India">India(+91)</option>
+                <option value="USA">USA(+1)</option>
+                <option value="China">China(+86)</option>
+                <option value="Japan">Japan(+81)</option>    
+            </select>
+        </div>
+        <div class="form">
+            <label>Purchase Date and Time:</label>
+            <input type="datetime-local" name="purchasedate">
+        </div>
+        <div class="form">
+            <p>What would you describe your purchase method as?<span class="brackets">(Check from the below)</span></p>
+            <label><input type="checkbox" value="customer" class="inputcheckbox">Customer</label><br>
+            <label><input type="checkbox" value="wholesale" class="inputcheckbox">wholesale</label><br>
+        </div>
+        <div class="form">
+            <p>Any Comments or Suggestions?</p>
+            <textarea class="inputtextarea" placeholder="Enter your description here..."></textarea>
+        </div>
+        <div class="form">
+            <button type="submit" name="submitbutton" class="inputsubmit">Submit</button>
+        </div>
+    </form>
+    </div>
+</section>

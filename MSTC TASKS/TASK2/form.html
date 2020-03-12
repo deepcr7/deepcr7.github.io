@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: #28292b;}
+form {border: 3px solid black;}
+
+            .img
+            {
+            display: block;
+            margin-left:40%;
+            margin-right:60%;
+            width:300px;
+            height:300px;
+            }
+            .logbutton
+            {
+                background-color:green;
+                color:white;
+                padding: 12px 20px;
+                width:auto;
+                margin: 8px;
+                
+
+            }
+            .cancel
+            {
+                background-color: red;
+                color: white;
+                width:auto;
+                padding: 12px 20px;
+                margin: 8px;
+            }
+            input[type=text], input[type=password]
+            {
+                width: auto;
+                padding:12px 18px;
+                margin: 8px;
+                border: 3px solid #ccc;
+            }
+        h2,p {
+            color:#FF9900;
+        }
+        
+
+
+        </style>
+    </head>
+    <body>
+        <form>
+
+            <fieldset>
+            <h2 style="color:#FF9900;font-size: 30px; text-align:center;">Login Form</h2>
+            <img src="login.jpg" img-align="middle" class="img">
+            <h2><b>Username:</b></h2>
+            <input type="text" name="username" placeholder="Enter Username">
+            <h2><b>Password:</b></h2>
+            <input type="password" name="password" placeholder="Enter Password">
+            <br>
+            <input type="button" onclick="alert('Thanks for Logging In')" name="loginbutton" value="Login" class="logbutton">
+            <br>
+            <br>
+            <input type="reset" name="cancel" value="Cancel" class="cancel">
+            <br>
+            <br>
+            <br>
+            <input type="checkbox" name="remember"> <p>Remember Me</p>
+            <a href="#forgot" style="float: right;"><p>Forgot Password?</p></a>
+            </fieldset>
+        </form>
+    </body>
+</html>
